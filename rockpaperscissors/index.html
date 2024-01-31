@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-4 overflow-x-hidden">
+    <header class="w-full">
+      <h1 class="text-center">Rock Paper and Scissors</h1>
+      <div class="flex justify-between">
+        <div class="flex flex-col items-center">
+          <p>Player Score</p>
+          <p>0</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <p>Opponent Score</p>
+          <p>0</p>
+        </div>
+      </div>
+    </header>
+    <main class="w-full flex items-center justify-between mt-[5rem]">
+      <div class="bg-red-900">
+        <p>Player pick</p>
+        <img
+          src="assets/rock.png"
+          alt="player attack"
+          class="rotate-90 ml-[2rem]"
+          id="player-attack"
+        />
+      </div>
+      <div>
+        <p>Opponent pick</p>
+      </div>
+    </main>
+    <footer class="w-full text-center absolute bottom-[1rem]">
+      <div>
+        <p class="mb-[2rem]">Pick your attack</p>
+        <div class="flex items-center gap-[2rem] justify-center">
+          <button id="rock-btn">rock</button>
+          <button id="paper-btn">paper</button>
+          <button id="scissor-btn">scissors</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./script.js"></script>
+</html>
